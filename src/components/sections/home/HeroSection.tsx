@@ -27,7 +27,7 @@ export default function HeroSection() {
       {/* Background photo */}
       <div className="absolute inset-0" style={{ transform: `translateY(${scrollY * 0.15}px)` }}>
         <Image
-          src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80"
+          src="/images/hero.jpg"
           alt="Chef cuisinier en action dans une cuisine professionnelle"
           fill
           className="object-cover"

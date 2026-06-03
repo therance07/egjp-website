@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
@@ -54,19 +55,7 @@ export default function Header() {
         <div className="container-custom flex items-center justify-between">
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center gap-3 group">
-            <div className="w-10 h-10 border-2 border-[#E8A020] flex items-center justify-center transition-all duration-300 group-hover:bg-[#E8A020]">
-              <span className="font-playfair font-bold text-[#E8A020] text-sm group-hover:text-[#1A0F00] transition-colors duration-300">
-                EG
-              </span>
-            </div>
-            <div className="hidden sm:block">
-              <div className="font-playfair text-white font-bold text-sm leading-tight tracking-wide">
-                École de Gastronomie
-              </div>
-              <div className="font-barlow text-[#E8A020] text-[0.6rem] font-600 tracking-[0.2em] uppercase">
-                Jean Paul II · Brazzaville
-              </div>
-            </div>
+            <Image src="/images/logo.svg" alt="EGJP - École de Gastronomie Jean Paul II" width={160} height={48} className="h-10 md:h-12 w-auto" priority />
           </Link>
 
           {/* Desktop Nav */}
