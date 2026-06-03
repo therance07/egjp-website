@@ -3,69 +3,7 @@ import Link from 'next/link';
 import { getLocale } from 'next-intl/server';
 import { Calendar, ArrowRight } from 'lucide-react';
 import AnimateInView from '@/components/ui/AnimateInView';
-
-const articles = [
-  {
-    slug: 'egjp-concours-gastronomique-2024',
-    title: 'L\'EGJP remporte le Grand Prix du concours gastronomique d\'Afrique centrale',
-    excerpt: 'Nos étudiants de 3ème année ont décroché la première place lors du concours interécoles culinaires d\'Afrique centrale, organisé à Libreville en novembre 2024.',
-    date: '15 novembre 2024',
-    tag: 'Distinction',
-    tagColor: 'gold',
-    image: '/images/gastro.jpg',
-    featured: true,
-  },
-  {
-    slug: 'nouvelle-promotion-janvier-2025',
-    title: 'Ouverture des candidatures — Promotion Janvier 2025',
-    excerpt: 'L\'EGJP ouvre ses inscriptions pour la promotion de janvier 2025. Formations courtes et modules professionnels disponibles.',
-    date: '1 décembre 2024',
-    tag: 'Inscriptions',
-    tagColor: 'green',
-    image: 'https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=600&q=80',
-    featured: false,
-  },
-  {
-    slug: 'chef-makosso-etoile-microbrasserie',
-    title: 'Josiane Makosso, diplômée EGJP, ouvre son restaurant étoilé à Pointe-Noire',
-    excerpt: 'Ancienne élève de la promotion 2021, Josiane vient d\'ouvrir "Saveurs du Kouilou", qui reçoit déjà des critiques élogieuses de la presse gastronomique.',
-    date: '20 octobre 2024',
-    tag: 'Succès Alumni',
-    tagColor: 'gold',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
-    featured: false,
-  },
-  {
-    slug: 'partenariat-lycee-hotelier-paris',
-    title: 'Nouveau partenariat académique avec un lycée hôtelier parisien',
-    excerpt: 'L\'EGJP signe un accord de coopération pédagogique permettant des échanges d\'étudiants et de formateurs avec une institution française de renom.',
-    date: '5 octobre 2024',
-    tag: 'Partenariat',
-    tagColor: 'gray',
-    image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80',
-    featured: false,
-  },
-  {
-    slug: 'atelier-chocolat-valrhona',
-    title: 'Master class Valrhona — 2 jours d\'immersion chocolaterie',
-    excerpt: 'Le Chef chocolatier de Valrhona a animé une master class exceptionnelle à l\'EGJP. Retour sur deux jours intenses de création et de passion.',
-    date: '22 septembre 2024',
-    tag: 'Formation',
-    tagColor: 'gold',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80',
-    featured: false,
-  },
-  {
-    slug: 'remise-diplomes-promotion-2024',
-    title: 'Cérémonie de remise des diplômes — Promotion 2024',
-    excerpt: 'Une soirée d\'exception pour 52 nouveaux diplômés qui rejoignent le réseau des professionnels formés par l\'EGJP depuis sa création.',
-    date: '10 juillet 2024',
-    tag: 'Événement',
-    tagColor: 'gray',
-    image: 'https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&q=80',
-    featured: false,
-  },
-];
+import { articles } from '@/data/articles';
 
 export default async function ActualitesPage() {
   const locale = await getLocale();
