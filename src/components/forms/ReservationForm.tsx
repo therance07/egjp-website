@@ -89,12 +89,12 @@ export default function ReservationForm() {
       <div className="grid grid-cols-2 gap-4">
         <div>
           <label className="form-label text-white/60 block mb-1.5">Prénom *</label>
-          <input {...register('prenom')} placeholder="Jean" className="form-input bg-white/05 border-white/15 text-white placeholder:text-white/20 focus:border-[#E8A020]" />
+          <input {...register('prenom')} placeholder="Jean" className="form-input-dark" />
           {errors.prenom && <p className="form-error mt-1">{errors.prenom.message}</p>}
         </div>
         <div>
           <label className="form-label text-white/60 block mb-1.5">Nom *</label>
-          <input {...register('nom')} placeholder="Dupont" className="form-input bg-white/05 border-white/15 text-white placeholder:text-white/20 focus:border-[#E8A020]" />
+          <input {...register('nom')} placeholder="Dupont" className="form-input-dark" />
           {errors.nom && <p className="form-error mt-1">{errors.nom.message}</p>}
         </div>
       </div>
@@ -103,12 +103,12 @@ export default function ReservationForm() {
       <div className="grid grid-cols-2 gap-4">
         <div>
           <label className="form-label text-white/60 block mb-1.5">Téléphone *</label>
-          <input {...register('telephone')} placeholder="+242 00 000 000" className="form-input bg-white/05 border-white/15 text-white placeholder:text-white/20 focus:border-[#E8A020]" />
+          <input {...register('telephone')} placeholder="+242 00 000 000" className="form-input-dark" />
           {errors.telephone && <p className="form-error mt-1">{errors.telephone.message}</p>}
         </div>
         <div>
           <label className="form-label text-white/60 block mb-1.5">Email</label>
-          <input {...register('email')} type="email" placeholder="email@exemple.com" className="form-input bg-white/05 border-white/15 text-white placeholder:text-white/20 focus:border-[#E8A020]" />
+          <input {...register('email')} type="email" placeholder="email@exemple.com" className="form-input-dark" />
           {errors.email && <p className="form-error mt-1">{errors.email.message}</p>}
         </div>
       </div>
@@ -117,12 +117,12 @@ export default function ReservationForm() {
       <div className="grid grid-cols-2 gap-4">
         <div>
           <label className="form-label text-white/60 block mb-1.5">Date *</label>
-          <input {...register('date_reservation')} type="date" className="form-input bg-white/05 border-white/15 text-white focus:border-[#E8A020] [color-scheme:dark]" />
+          <input {...register('date_reservation')} type="date" className="form-input-dark [color-scheme:dark]" />
           {errors.date_reservation && <p className="form-error mt-1">{errors.date_reservation.message}</p>}
         </div>
         <div>
           <label className="form-label text-white/60 block mb-1.5">Heure *</label>
-          <select {...register('heure')} className="form-input bg-[#1A0F00] border-white/15 text-white focus:border-[#E8A020]">
+          <select {...register('heure')} className="form-input-dark">
             <option value="">-- Choisir --</option>
             <optgroup label="Déjeuner" style={{ background: '#1A0F00' }}>
               <option>12:00</option>
@@ -145,14 +145,14 @@ export default function ReservationForm() {
       {/* Couverts */}
       <div>
         <label className="form-label text-white/60 block mb-1.5">Nombre de couverts * (1–8)</label>
-        <input {...register('nb_couverts', { valueAsNumber: true })} type="number" min="1" max="8" className="form-input bg-white/05 border-white/15 text-white focus:border-[#E8A020] w-28" />
+        <input {...register('nb_couverts', { valueAsNumber: true })} type="number" min="1" max="8" className="form-input-dark w-28" />
         {errors.nb_couverts && <p className="form-error mt-1">{errors.nb_couverts.message}</p>}
       </div>
 
       {/* Message */}
       <div>
         <label className="form-label text-white/60 block mb-1.5">Message / Demande particulière</label>
-        <textarea {...register('message')} rows={3} placeholder="Allergie, occasion spéciale, chaise enfant..." className="form-input bg-white/05 border-white/15 text-white placeholder:text-white/20 focus:border-[#E8A020] resize-none" />
+        <textarea {...register('message')} rows={3} placeholder="Allergie, occasion spéciale, chaise enfant..." className="form-input-dark resize-none" />
       </div>
 
       {error && (

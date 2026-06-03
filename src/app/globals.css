@@ -211,6 +211,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+.form-input-dark {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-barlow);
+  font-size: 0.875rem;
+  background: #2C1A00;
+  border: 1px solid rgba(232, 160, 32, 0.4);
+  color: white;
+  transition: all 0.3s ease;
+  outline: none;
+  appearance: none;
+  border-radius: 2px;
+}
+.form-input-dark:focus {
+  border-color: #E8A020;
+  box-shadow: 0 0 0 3px rgba(232, 160, 32, 0.15);
+}
+.form-input-dark::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+.form-input-dark.error {
+  border-color: #dc2626;
+}
+
 .img-placeholder {
   background: linear-gradient(135deg, #2C1A00 0%, #3D2A00 30%, #1A0F00 60%, #2C1A00 100%);
   background-size: 400% 400%;

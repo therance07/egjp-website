@@ -12,7 +12,7 @@ const articles = [
     date: '15 novembre 2024',
     tag: 'Distinction',
     tagColor: 'gold',
-    image: 'https://images.unsplash.com/photo-1549476464-37392f717541?w=1200&q=80',
+    image: '/images/gastro.jpg',
     featured: true,
   },
   {
