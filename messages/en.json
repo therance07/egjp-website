@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "Home",
+    "formations": "Programs",
+    "school": "The School",
+    "restaurant": "La Petite Faim",
+    "gallery": "Gallery",
+    "news": "News",
+    "contact": "Contact",
+    "enroll": "Enroll"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "School of Gastronomy",
+      "title": "Culinary arts in service of African excellence",
+      "subtitle": "Train for careers in hospitality and gastronomy in Brazzaville, with internationally recognized world-class education.",
+      "cta_discover": "Explore our programs",
+      "cta_enroll": "Apply now",
+      "badge": "Brazzaville, Congo"
+    },
+    "why": {
+      "title": "Why choose EGJP?",
+      "subtitle": "Excellence-driven training rooted in African reality, open to the world.",
+      "card1_title": "Recognized expertise",
+      "card1_desc": "15 years of culinary training, with chefs from the finest French and African establishments.",
+      "card2_title": "Real career outcomes",
+      "card2_desc": "95% of our graduates find employment within 6 months — hotels, restaurants, catering, entrepreneurship.",
+      "card3_title": "African & international cuisine",
+      "card3_desc": "Mastery of classical French techniques alongside authentic African flavors and local products.",
+      "card4_title": "Practice restaurant",
+      "card4_desc": "La Petite Faim, our training restaurant open to the public, immerses you in real-world service conditions."
+    },
+    "stats": {
+      "graduates": "Graduates trained",
+      "years": "Years of excellence",
+      "partners": "Pro. partners",
+      "placement": "Employment rate"
+    },
+    "programs_title": "Our flagship programs",
+    "programs_subtitle": "Programs designed for your professional success",
+    "testimonials_title": "They chose EGJP",
+    "testimonials_subtitle": "Inspiring stories, careers built with passion",
+    "restaurant_title": "La Petite Faim",
+    "restaurant_subtitle": "Our training restaurant — a unique gastronomic experience in the heart of Brazzaville",
+    "restaurant_cta": "Book a table",
+    "partners_title": "Partners & accreditations",
+    "cta_title": "Ready to turn your passion into a career?",
+    "cta_subtitle": "Join the next EGJP cohort and build your future in gastronomy.",
+    "cta_button": "Start my application"
+  },
+  "formations": {
+    "title": "Our Programs",
+    "subtitle": "Academic and professional programs for all levels",
+    "filter_all": "All",
+    "filter_diploma": "Degree programs",
+    "filter_short": "Short courses",
+    "duration": "Duration",
+    "level": "Required level",
+    "career": "Career paths",
+    "fees": "Program fees",
+    "enroll_cta": "Apply",
+    "download_brochure": "Download brochure"
+  },
+  "school": {
+    "title": "The School",
+    "subtitle": "An institution founded on passion, excellence and African values",
+    "history_title": "Our history",
+    "mission_title": "Our mission",
+    "values_title": "Our values",
+    "team_title": "Teaching staff",
+    "infra_title": "Our facilities",
+    "accred_title": "Accreditations"
+  },
+  "restaurant": {
+    "title": "La Petite Faim",
+    "subtitle": "EGJP's training restaurant",
+    "concept_title": "The concept",
+    "menu_title": "Our menu",
+    "reservation_title": "Book a table",
+    "gallery_title": "The dining room & dishes",
+    "hours_title": "Opening hours",
+    "location_title": "Find us",
+    "starters": "Starters",
+    "mains": "Main courses",
+    "desserts": "Desserts",
+    "drinks": "Drinks",
+    "filter_veg": "Vegetarian",
+    "filter_signature": "Signature",
+    "reserve_btn": "Reserve",
+    "confirm_title": "Booking confirmed!",
+    "confirm_msg": "We have received your request. Our team will contact you within 24 hours to confirm."
+  },
+  "inscription": {
+    "title": "Enrollment",
+    "subtitle": "Join EGJP — The first step toward your gastronomic career",
+    "form_title": "Application form",
+    "personal_info": "Personal information",
+    "program_choice": "Desired program",
+    "motivation": "Your motivation",
+    "success_title": "Application submitted!",
+    "success_msg": "Your application has been received. Our academic team will contact you within 48 business hours.",
+    "whatsapp_follow": "Follow on WhatsApp",
+    "faq_title": "Frequently asked questions"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We're here for you — ask us anything",
+    "form_title": "Send a message",
+    "info_title": "Our details",
+    "success_title": "Message sent!",
+    "success_msg": "Thank you for your message. We'll respond within 24 business hours."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred. Please try again.",
+    "required": "This field is required",
+    "invalid_email": "Invalid email",
+    "send": "Send",
+    "submit": "Submit",
+    "name": "Last name",
+    "firstname": "First name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "date": "Date",
+    "time": "Time",
+    "close": "Close",
+    "whatsapp": "WhatsApp",
+    "read_more": "Read more",
+    "see_all": "See all"
+  },
+  "footer": {
+    "tagline": "Culinary arts at the heart of Africa",
+    "quick_links": "Quick links",
+    "contact": "Contact",
+    "follow": "Follow us",
+    "copyright": "© 2024 École de Gastronomie Jean Paul II. All rights reserved.",
+    "address": "Avenue de la Paix, Brazzaville, Republic of Congo"
+  }
+}
