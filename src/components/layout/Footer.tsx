@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { Share2, Camera, MessageCircle, MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
@@ -39,19 +40,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <Link href={`/${locale}`} className="inline-block mb-6">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 border-2 border-[#E8A020] flex items-center justify-center">
-                  <span className="font-playfair font-bold text-[#E8A020] text-base">EG</span>
-                </div>
-                <div>
-                  <div className="font-playfair text-white font-bold text-sm leading-tight">
-                    École de Gastronomie
-                  </div>
-                  <div className="font-barlow text-[#E8A020]/80 text-[0.6rem] tracking-[0.2em] uppercase">
-                    Jean Paul II
-                  </div>
-                </div>
-              </div>
+              <Image src="/images/logo.svg" alt="EGJP - École de Gastronomie Jean Paul II" width={160} height={48} className="h-10 md:h-12 w-auto" priority />
             </Link>
 
             <p className="font-cormorant italic text-lg text-white/60 leading-relaxed mb-6">
