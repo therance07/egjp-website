@@ -10,7 +10,7 @@ const team = [
     formation: 'École Ferrandi Paris · 25 ans d\'expérience',
     specialty: 'Cuisine gastronomique franco-africaine',
     bio: 'Formé à l\'école Ferrandi et au Cordon Bleu de Paris, Jean-Marie Nkounga est revenu au Congo en 2009 avec une mission : créer la première école gastronomique d\'excellence d\'Afrique centrale.',
-    photo: 'https://images.unsplash.com/photo-1583394293214-0b3e4c2d4b6e?w=400&q=80',
+    photo: '/images/chef-jean-marie-nkouga.jpg',
   },
   {
     name: 'Chef Patricia Loemba',
@@ -18,7 +18,7 @@ const team = [
     formation: 'École Valrhona · 18 ans d\'expérience',
     specialty: 'Pâtisserie fine & chocolaterie',
     bio: 'Première Congolaise à avoir intégré les équipes de Valrhona en France, Patricia a développé un langage pâtissier qui fusionne techniques européennes et ingrédients africains.',
-    photo: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80',
+    photo: '/images/chef-patricia-loemba.jpg',
   },
   {
     name: 'M. Stéphane Bouanga',
@@ -26,7 +26,7 @@ const team = [
     formation: 'MBA Management Hôtelier · Paris',
     specialty: 'Gestion de restaurant, Finance',
     bio: 'Ancien directeur F&B de chaînes hôtelières en Afrique de l\'Ouest, Stéphane apporte une expertise unique en gestion financière et développement commercial pour les métiers de la restauration.',
-    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+    photo: '/images/m-stephane-bouanga.jpg',
   },
   {
     name: 'Chef Aimée Tsiba',
@@ -34,7 +34,7 @@ const team = [
     formation: 'Institut Paul Bocuse · Lyon',
     specialty: 'Service gastronomique, Vins africains',
     bio: 'Aimée a révolutionné l\'enseignement du service en incluant les vins d\'Afrique du Sud et les spiritueux traditionnels africains dans le cursus de sommellerie de l\'école.',
-    photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80',
+    photo: '/images/chef-aimee-tsiba.jpg',
   },
 ];
 
@@ -50,8 +50,19 @@ export default function LeckolePage() {
     <div>
       {/* Hero */}
       <section className="section-dark relative overflow-hidden pt-[70px] md:pt-[80px] pb-24">
+        {/* Background photo */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/ecole.jpg"
+            alt="École de Gastronomie Jean Paul II — Brazzaville"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        {/* Dark overlay */}
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 70% 30%, rgba(232,160,32,0.08) 0%, transparent 60%), linear-gradient(160deg, #1A0F00 0%, #2C1A00 100%)' }}
+          style={{ background: 'radial-gradient(ellipse at 70% 30%, rgba(232,160,32,0.08) 0%, transparent 60%), linear-gradient(160deg, rgba(26,15,0,0.88) 0%, rgba(44,26,0,0.82) 100%)' }}
         />
         <div className="container-custom relative z-10">
           <AnimateInView>
@@ -103,7 +114,7 @@ export default function LeckolePage() {
               <div className="relative">
                 <div className="w-full aspect-[4/3] relative overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80"
+                    src="/images/ecole-histoire.jpg"
                     alt="Cuisine pédagogique de l'EGJP — étudiants en formation"
                     fill
                     className="object-cover"
